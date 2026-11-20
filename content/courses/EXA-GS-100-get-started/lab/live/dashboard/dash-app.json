@@ -1,0 +1,14 @@
+{
+  "name": "nye-taxis",
+  "title": "New Year's Eve on New York's taxis",
+  "route": "/apps/nye-taxis",
+  "description": "New Year's Eve 2025 on NYC's yellow taxis with a time slider: every panel queries the view TAXI.V_NYE_TRIPS for the selected window",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

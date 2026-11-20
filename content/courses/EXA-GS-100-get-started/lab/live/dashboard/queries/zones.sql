@@ -1,0 +1,9 @@
+-- Pickups per taxi zone in the selected window: colours the map and fills the Top 10 table.
+SELECT PICKUP_ZONE_ID  AS ZONE_ID,
+       PICKUP_ZONE     AS ZONE_NAME,
+       PICKUP_BOROUGH  AS BOROUGH,
+       COUNT(*)        AS PICKUPS
+FROM TAXI.V_NYE_TRIPS
+WHERE PICKUP_TIME >= ADD_MINUTES(TIMESTAMP '2025-12-31 18:00:00', {start_min!d})
+  AND PICKUP_TIME <  ADD_MINUTES(TIMESTAMP '2025-12-31 18:00:00', {end_min!d})
+GROUP BY PICKUP_ZONE_ID, PICKUP_ZONE, PICKUP_BOROUGH

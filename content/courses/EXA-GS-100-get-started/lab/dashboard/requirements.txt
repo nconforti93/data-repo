@@ -1,4 +1,0 @@
-# Python 3.11 or newer
-dash==4.5.0
-plotly==7.1.0
-pyexasol==3.0.1

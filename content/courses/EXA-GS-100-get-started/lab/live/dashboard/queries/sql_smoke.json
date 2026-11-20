@@ -1,0 +1,5 @@
+{
+  "queries/kpis.sql": {"start_min": 0, "end_min": 60},
+  "queries/zones.sql": {"start_min": 0, "end_min": 60},
+  "queries/trips_per_minute.sql": {}
+}
